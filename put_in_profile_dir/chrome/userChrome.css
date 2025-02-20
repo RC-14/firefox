@@ -1,0 +1,19 @@
+/* This file contains visual customizations to Firefox UI.
+ * 
+ * !IMPORTANT!
+ * This file won't be loaded unless `toolkit.legacyUserProfileCustomizations.stylesheets`
+ * is set to `true`.
+ * 
+ * If you also used the install dir mod this happens automatically,
+ * if not you'll need to set it manually on `about:config`.
+*/
+
+/*
+ * Be gone Tabbar!
+ * 
+ * For context:
+ * I use sideberry
+ */
+#TabsToolbar {
+  visibility: collapse;
+}
