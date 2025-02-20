@@ -31,6 +31,23 @@ On Mac this is not `Firefox.app` itself but the `Contents/Resources` subdirector
 
 To make sure the config gets applied go to `about:support` and use `Clear startup cache...` to restart Firefox.
 
+<details>
+  <summary>Installing unsigned extensions</summary>
+  All extensions need a unique ID, so to install an unsigned extension you'll need to add one to the manifest yourself.
+
+  Example:
+  ```JSON
+    {
+      "browser_specific_settings": {
+        "gecko": {
+          "id": "{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}"
+        }
+      },
+      //...
+    }
+  ```
+</details>
+
 Some useful links:
 
 - [Official Mozilla page (rough basics)](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig)
